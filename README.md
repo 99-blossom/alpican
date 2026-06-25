@@ -1,19 +1,14 @@
-<center>
 <br>
 <p align="center">
   <img src="https://www.alpinelinux.org/alpinelinux-logo.svg" width="300"/>
 </p>
-<h2>Alpican (11 / R)</h2>
-<p>Alpine Linux port for Redmi 9C NFC: Again.</p>
-</center>
+<h2 align="center">Alpican (11 / R)</h2>
+<p align="center">Alpine Linux port for Redmi 9C NFC: Again.</p>
+
 
 
 ## Images
-<img src="assets/1.jpg" width=300 alt="1">
-<img src="assets/2.jpg" width=300 alt="2">
-<img src="assets/3.jpg" width=300 alt="3">
-<img src="assets/4.jpg" width=300 alt="4">
-<img src="assets/5.jpg" width=300 alt="5">
+<img src="assets/1.jpg" width=300 alt="1"> <img src="assets/2.jpg" width=300 alt="2"> <img src="assets/3.jpg" width=300 alt="3"> <img src="assets/4.jpg" width=300 alt="4"> <img src="assets/5.jpg" width=300 alt="5">
 
 ## Why
 This project **aims** to bring a minimal, fast, and highly customizable `Alpine Linux` environment to the Redmi 9C NFC (MediaTek Helio G35) device. **The goal** is to move beyond heavily modified Android userlands and explore a clean, _Unix-like_ system on mobile hardware.
