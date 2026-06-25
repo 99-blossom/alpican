@@ -22,6 +22,8 @@ Alpine was chosen because of its simplicity, small footprint, and flexibility. I
 
 It also serves as a potential alternative to my previous project [angentoo](https://github.com/xewvvi/angentoo), as Alpican currently has a smaller number of known bugs and a more stable base for experimentation.
 
+If you find any bugs, please let me know and I will try to fix them.
+
 ## Guides
 * [🇬🇧 Install EN](ins/en.md)
 * [🇷🇺 Install RU](ins/ru.md)
