@@ -27,7 +27,7 @@ usermod -aG plugdev $USER
 5. Убедитесь, что устройство заряжено как минимум на 25%.
 
 ## Установка
-Скачайте архив по [этой](https://tba) ссылке.
+Скачайте архив по [этой](https://drive.google.com/file/d/1edQw_byDPy58eMwiulZUrmgzT7wKSGXL/view?usp=sharing) ссылке.
 
 Распакуйте архив с прошивкой. Внутри должны быть файлы: `boot.img`, `logo.bin`, `rootfs.img`, `vbmeta.img`, `lk_blossom_R.img` и скрипт установки `install.sh`.
 

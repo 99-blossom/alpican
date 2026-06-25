@@ -36,7 +36,7 @@ usermod -aG plugdev $USER
 
 ## Installation
 
-Download the archive from [this](https://tba) link.
+Download the archive from [this](https://drive.google.com/file/d/1edQw_byDPy58eMwiulZUrmgzT7wKSGXL/view?usp=sharing) link.
 
 Extract the ROM archive. Inside should be: `boot.img`, `logo.bin`,
 `rootfs.img`, `vbmeta.img`, `lk_blossom_R.img`, and the installer script
