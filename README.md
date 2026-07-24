@@ -1,7 +1,7 @@
 <a href="https://keepandroidopen.org">
   <img src="assets/keep-android-open.svg" alt="Android will become a locked-down platform in January 2027. keepandroidopen.org" width="100%">
 </a>
-
+<br>
 <br>
 
 <p align="center">
