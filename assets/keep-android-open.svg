@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="52" viewBox="0 0 900 52">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d32f2f"/>
+      <stop offset="100%" stop-color="#b71c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="48" fill="url(#bg)"/>
+  <rect y="48" width="900" height="4" fill="#801313"/>
+  <text x="450" y="30" text-anchor="middle" fill="#5e0d0d" font-family="'Arial Black','Impact',sans-serif" font-weight="900" font-size="17" letter-spacing="2" text-rendering="geometricPrecision" dy="4">
+    ANDROID WILL BECOME A LOCKED-DOWN PLATFORM IN JANUARY 2027
+  </text>
+  <text x="450" y="30" text-anchor="middle" fill="#751111" font-family="'Arial Black','Impact',sans-serif" font-weight="900" font-size="17" letter-spacing="2" text-rendering="geometricPrecision" dy="3">
+    ANDROID WILL BECOME A LOCKED-DOWN PLATFORM IN JANUARY 2027
+  </text>
+  <text x="450" y="30" text-anchor="middle" fill="#8a1515" font-family="'Arial Black','Impact',sans-serif" font-weight="900" font-size="17" letter-spacing="2" text-rendering="geometricPrecision" dy="2">
+    ANDROID WILL BECOME A LOCKED-DOWN PLATFORM IN JANUARY 2027
+  </text>
+  <text x="450" y="30" text-anchor="middle" fill="#9e1a1a" font-family="'Arial Black','Impact',sans-serif" font-weight="900" font-size="17" letter-spacing="2" text-rendering="geometricPrecision" dy="1">
+    ANDROID WILL BECOME A LOCKED-DOWN PLATFORM IN JANUARY 2027
+  </text>
+  <!-- Main text -->
+  <text x="450" y="30" text-anchor="middle" fill="#ffffff" font-family="'Arial Black','Impact',sans-serif" font-weight="900" font-size="17" letter-spacing="2" text-rendering="geometricPrecision">
+    ANDROID WILL BECOME A LOCKED-DOWN PLATFORM IN JANUARY 2027
+  </text>
+</svg>

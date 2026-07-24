@@ -1,4 +1,27 @@
-## 3.0 (Latest)
+## 4.0 (Latest)
+* **Kernel**:
+  - Added `systemd` support (enabled `FHANDLE`, `AUTOFS`, `AUDIT`, `CRYPTO_USER_API_HASH`, `CRYPTO_HMAC`),
+  - Stripped unused initramfs decompressors (`LZ4`, `LZO`, `bzip2`, `LZMA`, `XZ`, `zstd`),
+  - Disabled `CONFIG_DEBUG_INFO`.
+  - Removed the `-st8` version suffix,
+  - Removed the `logo.nologo` parameter from **cmdline**,
+  - Removed the `buildvariant=userdebug` parameter from cmdline,
+  - Removed duplicate call to `info->fbops->fb_imageblit(info, image);` in `bitblit.c`
+  - Replaced `dbg_fb_*` **debug** functions with `cfb_fillrect` and `cfb_imageblit`
+* **rootfs**
+  - Fixed WiFi startup race condition (merged `mtk-wifi` and `wmt-pyloader` services),
+  -  Added the **`vibro`** command to `twc`,
+* **USB Gadget**: Device serial number is now written to the configuration,
+* **initramfs**:
+  - Added ACM serial console initialization status output during boot,
+  - Added dynamic parsing of the root partition from `cmdline` parameters (selecting the last `root=` parameter specified, ignoring `root=/dev/ram*` parameters and displaying a warning) instead of hardcoding `/dev/mmcblk0p41`,
+  - Increased root device timeout (`root_timeout`) from 15 to 25 seconds.
+* **install.sh**:
+  - Refactored user interaction (UX improvements),
+  - Added `--skip-device-verification` flag,
+  - `fastboot reboot bootloader` is now executed before `oem cdms`, without which `oem cdms` would not work.
+
+## 3.0
 * **install.sh**: 
   - Added LK image selection (`lk_blossom_R.img` / `oem-cdms-logo-lk.img`),
   - Refactored user interaction (UX improvements),

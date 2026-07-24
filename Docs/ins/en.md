@@ -1,13 +1,12 @@
 # Installation
 
-## Preparation:
-
 > [!CAUTION]
 > **PLEASE READ THIS ENTIRE GUIDE SLOWLY, CAREFULLY, AND FROM BEGINNING TO END!! MAKE SURE YOU FULLY UNDERSTAND EVERY STEP, NOTE, AND INSTRUCTION BEFORE YOU START!! DO NOT SKIP ANY PART OF THIS GUIDE, AS DOING SO MAY LEAD TO ERRORS OR UNEXPECTED PROBLEMS LATER!!**
 
 > [!WARNING]
 > * **Back up all important data** from your device before proceeding.
 > * **Ensure you have access to unbricking tools** (such as SP Flash Tool or `mtkclient`) and have a stock firmware image ready in case of a hard brick.
+## Preparation
 
 1. Install MIUI 12.5 on the phone.
 
@@ -38,7 +37,7 @@
 
 ## Installation
 
-Download the archive from [this](https://drive.google.com/file/d/1Tf3dM5eRfAEaKKZisNR0pVCe43HCSaTp/view?usp=sharing) link.
+Download the archive from [this](https://drive.google.com/file/d/1tmfrvsoaDGTfYF4Bm8DZVnh6eXieE4YZ/view?usp=sharing) link.
 
 Extract the ROM archive. Inside should be: `boot.img`, `logo.bin`, `rootfs.img`, `vbmeta.img`, `oem-cdms-logo-lk.img`, `lk_blossom_R.img`, and the installer script `install.sh`.
 
@@ -61,7 +60,15 @@ Extract the ROM archive. Inside should be: `boot.img`, `logo.bin`, `rootfs.img`,
    ./install.sh
    ```
 
-3. Follow the instructions inside the script.
+3. Follow the instructions inside the script:
+   <details>
+   <summary>(+)</summary>
+   <p align="center">
+      <br>
+      <img src="../../assets/install4.png" alt="install4" width="1200">
+   </p>
+   </details>
+<br>
 
 > [!NOTE]
 > If `oem-cdms-logo-lk.img` is selected, the host identifier may be displayed as **MT6762G**. This is expected behavior and does not affect system functionality.
@@ -72,6 +79,7 @@ Extract the ROM archive. Inside should be: `boot.img`, `logo.bin`, `rootfs.img`,
 > If you flashed `rootfs.img` to `userdata` and the system only sees ~500 MB of space (the original image size), expand the filesystem to fill the entire partition using `resize2fs` from the `e2fsprogs-extra` package:
 > ```sh
 > apk add e2fsprogs-extra
+>
 > resize2fs /dev/mmcblk0p41
 > ```
 
