@@ -17,7 +17,7 @@
 > Proceed **only** if you fully understand what you are doing and accept all associated risks. If not, please leave this page!
 
 > [!NOTE]
-> I am currently ~~moving~~ this device toward [U-Boot](https://u-boot.org/) and a mainline Linux kernel, but for now Alpican is **still** using a downstream 4.19 kernel without U-Boot.
+> I am currently ~~moving~~ this device toward [U-Boot](https://u-boot-project.org/) and a mainline Linux kernel, but for now Alpican is **still** using a downstream 4.19 kernel without U-Boot.
 >
 > * [🇬🇧 Mainline / U-Boot progress](Docs/mainline.md)
 > * [Kernel sources (downstream 4.19)](https://github.com/99-blossom/kernel_xiaomi_blossom_gnulinux)
