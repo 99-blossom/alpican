@@ -25,7 +25,7 @@
 > * [Kernel sources (7.2, mainline)](https://github.com/torvalds/linux)
 
 ## Changelog
-* **Alpican version:** v4.0 (based on Alpine v3.24, aarch64);
+* **Alpican version:** v4.1 (based on Alpine v3.24, aarch64);
 * [🇬🇧 Changelog EN](Docs/ch/en.md)
 * [🇷🇺 Changelog RU](Docs/ch/ru.md)
 
@@ -115,7 +115,7 @@ If you find any bugs, please [open an issue](https://github.com/99-blossom/alpic
 * **dropout**, **[Xerrorain](https://4pda.to/forum/index.php?showuser=11705487)** - `lk_blossom_R.img`, `oem-cdms-logo-lk.img`
 * **[VildanG](https://github.com/vildangil)** - Redmi 9A tests
 * **[kiberrrxx](https://github.com/kiberrrxx)**
-* **[LineXin](https://github.com/LineXin)**, **[MrGadget84](https://4pda.to/forum/index.php?showuser=11986529)**, **[predefine](https://wiki.postmarketos.org/wiki/User:Predefine)**
+* **[LineXin](https://github.com/LineXin)**, **[MrGadget84](https://4pda.to/forum/index.php?showuser=11986529)**, **[predefine](http://github.com/predefine)**
 
 ## Liked it?
 * **KISS**

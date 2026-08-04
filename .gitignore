@@ -1,6 +1,7 @@
 tozip/
 alpican/
 old/
+output/
 busybox/
 
 *.img

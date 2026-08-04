@@ -37,9 +37,9 @@
 
 ## Установка
 
-Скачайте архив по [этой](https://drive.google.com/file/d/1tmfrvsoaDGTfYF4Bm8DZVnh6eXieE4YZ/view?usp=sharing) ссылке.
+Скачайте последний архив со страницы [**Releases**](https://github.com/99-blossom/alpican/releases/latest).
 
-Распакуйте архив с прошивкой. Внутри должны быть файлы: `boot.img`, `logo.bin`, `rootfs.img`, `vbmeta.img`, `oem-cdms-logo-lk.img`, `lk_blossom_R.img` и скрипт установки `install.sh`.
+Распакуйте архив. Внутри должны быть файлы: `boot.img`, `logo_redmi_alpine.bin`, `rootfs.img`, `vbmeta.img`, `oem-cdms-logo-lk.img`, `lk_blossom_R.img` и скрипт установки `install.sh`.
 
 1. Подключите устройство к компьютеру в режиме `fastboot`. Проверьте, видит ли его компьютер, командой:
    ```sh
@@ -68,8 +68,7 @@
       <img src="../../assets/install4.png" alt="install4" width="1200">
    </p>
    </details>
-<br>
-
+   <br>
 > [!NOTE]
 > Если выбран `oem-cdms-logo-lk.img`, идентификатор хоста может отображаться как **MT6762G**. Это ожидаемое поведение и не влияет на работу системы.
 >
@@ -84,4 +83,4 @@
 > ```
 
 ## Пароли
-* root : 1
+* **root:** 1

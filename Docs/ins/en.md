@@ -37,9 +37,10 @@
 
 ## Installation
 
-Download the archive from [this](https://drive.google.com/file/d/1tmfrvsoaDGTfYF4Bm8DZVnh6eXieE4YZ/view?usp=sharing) link.
+Download the latest archive from the [**Releases**](https://github.com/99-blossom/alpican/releases/latest) page.
 
-Extract the ROM archive. Inside should be: `boot.img`, `logo.bin`, `rootfs.img`, `vbmeta.img`, `oem-cdms-logo-lk.img`, `lk_blossom_R.img`, and the installer script `install.sh`.
+
+Extract the archive. Inside should be: `boot.img`, `logo_redmi_alpine.bin`, `rootfs.img`, `vbmeta.img`, `oem-cdms-logo-lk.img`, `lk_blossom_R.img`, and the installer script `install.sh`.
 
 1. Connect the device to the computer in `fastboot` mode. Check if the computer detects it:
    ```sh
@@ -84,4 +85,4 @@ Extract the ROM archive. Inside should be: `boot.img`, `logo.bin`, `rootfs.img`,
 > ```
 
 ## Passwords
-* root : 1
+* **root:** 1

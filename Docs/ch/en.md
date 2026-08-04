@@ -1,4 +1,15 @@
-## 4.0 (Latest)
+## 4.1 (Latest)
+* **initramfs**:
+  - Fixed a typo in stream redirection (`2>&0` replaced with `2>&1`) for proper error logging in the emergency shell over ACM,
+  - Dynamic device parsing from `androidboot.hwname=`, replacing hardcoded **Redmi 9C NFC**,
+* **install.sh**: 
+  - Added an option to skip flashing `logo.bin`,
+* **rootfs**: 
+  - Fixed `sshd` status display overlapping `agetty`,
+* **Misc**:
+  - Switched from Google Drive to [GitHub Releases](https://github.com/99-blossom/alpican/releases) for hosting release files
+
+## 4.0
 * **Kernel**:
   - Added `systemd` support (enabled `FHANDLE`, `AUTOFS`, `AUDIT`, `CRYPTO_USER_API_HASH`, `CRYPTO_HMAC`),
   - Stripped unused initramfs decompressors (`LZ4`, `LZO`, `bzip2`, `LZMA`, `XZ`, `zstd`),
