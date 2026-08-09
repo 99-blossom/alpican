@@ -41,7 +41,7 @@
   </figure>
 
   <figure style="margin: 0;">
-    <img src="assets/3.jpg" alt="3" style="height: 400px; width: auto; display: block;">
+    <img src="assets/vnc_openbox.png" alt="3" style="height: 400px; width: auto; display: block;">
   </figure>
 
   <figure style="margin: 0;">
@@ -76,7 +76,7 @@ If you find any bugs, please [open an issue](https://github.com/99-blossom/alpic
 
 | Feature | Status | Notes |
 | :--- | :---: | :--- |
-| **Flashing** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | |
+| **Flashing** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> |  |
 | **Booting** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `OpenRC` / `systemd` |
 | **Storage** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Internal (**eMMC**), external (**MicroSD** cards) |
 | **Display** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Framebuffer (`mtkfb`, `/dev/fb0`), console output, brightness control |
@@ -92,7 +92,7 @@ If you find any bugs, please [open an issue](https://github.com/99-blossom/alpic
 | **Inputs** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Touchscreen (`buffyboard`), **OTG** keyboard |
 | **Audio** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `aplay` tested, `alsamixer` config required |
 | **Virtualization** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `qemu-system-aarch64`, `qemu-system-x86_64` (`/dev/kvm` exists) |
-| **X11** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `X.Org`, `xorg-server`, `xf86-video-fbdev` (`XFCE4`, `LXQt`, `MATE`, `bspwm`) |
+| **X11** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `X.Org`, `xorg-server`, `xf86-video-fbdev`, `x11vnc` (basically any X11 WM/DE) |
 | **Wayland** | <img src="https://img.shields.io/badge/-Partial-orange?style=flat" height="18" alt="Partial"> | `fbdev-backend`, Weston (10.0.5, `fbdev-backend.so`, **!> 11**) |
 | **Misc**| <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Flashlight, Vibration motor |
 | **Camera** | <img src="https://img.shields.io/badge/-Broken-red?style=flat" height="18" alt="Broken"> ||
