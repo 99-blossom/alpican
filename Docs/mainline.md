@@ -16,7 +16,7 @@ U-Boot can chainload both Linux and Android:
 <!--- u-boot щас такой типо я покажу тебе что такое ловис --->
 
 ### Mainline Kernel
-Managed to boot both **6.10.0-rc3** (w/o U-Boot) and **7.2.0-rc4** (w/ U-Boot).
+Managed to boot **5.15**, **6.10.0-rc3** (both w/o U-Boot) and **7.2.0-rc4** (w/ U-Boot).
 
 * **6.10.0-rc3** - display output, boot and `/init` execution work.
 
