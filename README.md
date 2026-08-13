@@ -89,8 +89,7 @@ Officially, **Alpican** supports only the **Redmi 9C NFC**. However, it is absol
 | Feature | Status | Notes |
 | :--- | :---: | :--- |
 | **Flashing** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> |  |
-| **Booting** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `OpenRC`, `systemd`, `runit` (all work, but **OpenRC** is used)
- |
+| **Booting** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `OpenRC`, `systemd`, `runit` (all work, but **OpenRC** is used) |
 | **Storage** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Internal (**eMMC**), external (**MicroSD** cards) |
 | **Display** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Framebuffer (`mtkfb`, `/dev/fb0`), console output, brightness control |
 | **Console** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `agetty`, `tty`, `sh`/`bash`, cursor visibility |
