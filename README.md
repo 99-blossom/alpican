@@ -65,7 +65,19 @@ This project **aims** to bring a minimal, fast, and highly customizable `Alpine 
 Alpine was chosen because of its simplicity, small footprint, and flexibility. It provides a lightweight base system that can be easily adapted for embedded devices and experimental ports. Unlike traditional Android-based distributions, Alpine gives full control over the system without unnecessary services or background overhead.
 
 If you find any bugs, please [open an issue](https://github.com/99-blossom/alpican/issues) or reach out in any way you can. I _may_ be slow to respond, as I work on projects in my free time.
+### Other blossom devices?
 
+Officially, **Alpican** supports only the **Redmi 9C NFC**. However, it is absolutely possible to run it on other devices from the `blossom` family as well (thanks to **VildanG** for proving this). For example, **Redmi 9A**:
+
+<details>
+<summary>(+)</summary>
+    <br>
+    <img src="assets/redmi_9a.jpg" alt="Redmi 9A running Alpican" width="900">
+</details>
+<br>
+
+> [!NOTE]
+> On the **Redmi 9A**, the fingerprint-related configuration had to be disabled because the device does not have a fingerprint sensor. Leaving it enabled caused a **NULL pointer dereference**.
 ## Guides
 * [🇬🇧 Install EN](Docs/ins/en.md)
 * [🇷🇺 Install RU](Docs/ins/ru.md)
@@ -77,7 +89,8 @@ If you find any bugs, please [open an issue](https://github.com/99-blossom/alpic
 | Feature | Status | Notes |
 | :--- | :---: | :--- |
 | **Flashing** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> |  |
-| **Booting** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `OpenRC` / `systemd` |
+| **Booting** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `OpenRC`, `systemd`, `runit` (all work, but **OpenRC** is used)
+ |
 | **Storage** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Internal (**eMMC**), external (**MicroSD** cards) |
 | **Display** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Framebuffer (`mtkfb`, `/dev/fb0`), console output, brightness control |
 | **Console** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `agetty`, `tty`, `sh`/`bash`, cursor visibility |
@@ -119,3 +132,4 @@ If you find any bugs, please [open an issue](https://github.com/99-blossom/alpic
 
 ## Liked it?
 * **KISS**
+* ... and if you find this project useful or interesting, please consider leaving a ⭐ **star**!
