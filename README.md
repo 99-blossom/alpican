@@ -127,7 +127,7 @@ Officially, **Alpican** supports only the **Redmi 9C NFC**. However, it is absol
 * **dropout**, **[Xerrorain](https://4pda.to/forum/index.php?showuser=11705487)** - `lk_blossom_R.img`, `oem-cdms-logo-lk.img`
 * **[VildanG](https://github.com/vildangil)** - Redmi 9A tests
 * **[kiberrrxx](https://github.com/kiberrrxx)**
-* **[LineXin](https://github.com/LineXin)**, **[MrGadget84](https://4pda.to/forum/index.php?showuser=11986529)**, **[predefine](http://github.com/predefine)**
+* **[predefine](http://github.com/predefine)**
 
 ## Liked it?
 * **KISS**
