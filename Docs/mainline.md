@@ -1,41 +1,21 @@
 ## Mainline / U-Boot
 [← Back to README](../README.md)
 
-Early bring-up efforts to run a mainline Linux kernel.
-
 ### U-Boot
-U-Boot now boots directly via LK:
-```
-brom -> Preloader -> LK -> boot.img (-> U-Boot) -> Linux / Android / GRUB / etc.
-```
-**eMMC** and buttons also works:
+Previously, U-Boot was chain-loaded by LK. Now it boots **instead of** LK, using [this fork](https://github.com/knukima/u-boot-mt6765):
 
-<figure style="display: inline-block; text-align: center; margin: 10px;">
-  <img src="../assets/uboot-early.jpg" alt="7" width="400">
-  <figcaption>Old Photo</figcaption>
-</figure>
-<!--- u-boot щас такой типо я покажу тебе что такое ловис --->
+<img src="../assets/u-boot-lk.jpg" alt="U-Boot booting instead of LK" width="500">
+
+<br>
+However, I have no plans to replace LK with U-Boot at the moment.
 
 ### Mainline Kernel
-Managed to boot **5.15**, **6.10.0-rc3** (both w/o U-Boot) and **7.2.0-rc4** (w/ U-Boot).
+Alpican can boot into Alpine userspace from an SD card on mainline kernel 7.1.0 using [uniLoader](https://github.com/ivoszbg/uniLoader), which officially supports `xiaomi-blossom` :
 
-* **6.10.0-rc3** - display output, boot and `/init` execution work.
-
-<figure style="display: inline-block; text-align: center; margin: 10px;">
-  <img src="../assets/6-10.jpg" alt="6.10-rc3" width="400">
-  <figcaption>6.10.0-rc3 in emergency shell</figcaption>
-</figure>
-
----
-* **7.2.0-rc4** - same as above, but `/init` execution is very buggy.
-
-<figure style="display: inline-block; text-align: center; margin: 10px;">
-  <img src="../assets/7.20.jpg" alt="7" width="400">
-  <figcaption>7.2.0-rc4 with initcall_debug</figcaption>
-</figure>
+<img src="../assets/mainline-7.1.0.jpg" alt="Alpican running mainline kernel 7.1.0" width="400">
 
 
 ### pmOS moment
 <p>
-  <img src="../assets/pmos_moment.png" alt="pmos moment" width="400">
+<img src="../assets/pmos_moment.png" alt="pmos moment" width="400">
 </p>
