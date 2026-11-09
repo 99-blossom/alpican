@@ -28,7 +28,7 @@ dd if=/dev/block/by-name/nvram of=/sdcard/nvram.bin
 > The installer does not touch `nvdata`, `nvcfg`, or `nvram`. Keep copies of them anyway: the `nvdata`, `nvcfg`, and `nvram` partitions store your IMEI.
 
 > [!CAUTION]
-> The backups above **do not include** `userdata` (personal files, apps, photos). If you choose to flash `userdata` (answer `n` to "Skip flashing userdata partition?"), this partition will be **completely erased**. To keep your data, copy what you need in advance (via `adb pull`, MTP, or cloud storage) **before** running the installer.
+> The backups above **do not include** `userdata` (personal files, apps, photos). To keep your data, copy what you need in advance (via `adb pull`, MTP, or cloud storage) **before** running the installer.
 
 You can copy the files to your computer over ADB:
 
@@ -168,10 +168,6 @@ The installer asks the following questions in order. Any input other than the va
 3. **Which logo?** - choose the boot logo:
    * `1` - `logo_redmi_alpine.bin`: the standard Redmi logo with **Powered by Alpine** instead of **Android**.
    * `2` - do not flash the `logo` partition. Choose this if the current logo is fine for you.
-
-4. **Skip flashing userdata partition? [y/N]** - the answer depends on the type of installation:
-   * `n` - standard installation: `rootfs.img` is written to `userdata`, and all data will be erased.
-   * `y` - skip `userdata`.
 
 When the installation finishes, reboot the phone:
 
