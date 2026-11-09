@@ -159,11 +159,11 @@ The installer asks the following questions in order. Any input other than the va
    * `1` - `lk_blossom_R.img`: custom boot logo support.
    * `2` - `oem-cdms-logo-lk.img`: custom boot logo support and a fix for the `dm-verity corruption` error.
 
-   > [!NOTE]
-   >
-   > If `oem-cdms-logo-lk.img` is selected, the host identifier may be displayed as **MT6762G**. This is expected behavior and does not affect system functionality.
-   >
-   > [This happens because this LK comes from the Redmi 10A firmware (MIUI 12.5.4.0 RCZCNXM) and uses the platform identifier MT6762G rather than the device codename.](https://4pda.to/forum/index.php?act=findpost&pid=139550809&anchor=Spoil-139550809-2)
+> [!NOTE]
+>
+> If `oem-cdms-logo-lk.img` is selected, the host identifier may be displayed as **MT6762G**. This is expected behavior and does not affect system functionality.
+>
+> [This happens because this LK comes from the Redmi 10A firmware (MIUI 12.5.4.0 RCZCNXM) and uses the platform identifier MT6762G rather than the device codename.](https://4pda.to/forum/index.php?act=findpost&pid=139550809&anchor=Spoil-139550809-2)
 
 3. **Which logo?** - choose the boot logo:
    * `1` - `logo_redmi_alpine.bin`: the standard Redmi logo with **Powered by Alpine** instead of **Android**.
