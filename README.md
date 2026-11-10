@@ -7,84 +7,70 @@
 <p align="center">
   <img src="https://www.alpinelinux.org/alpinelinux-logo.svg" width="300"/>
 </p>
-<h2 align="center">Alpican (OSS & R Vendor)</h2>
-<p align="center">Alpine Linux port for Redmi 9C / NFC</p>
+<h2 align="center">Alpican – R / OSS Vendor</h2>
+<p align="center">Alpine Linux for <code>xiaomi-blossom</code></p>
 
 > [!WARNING]  
-> I am **NOT** responsible for **any** damage to your device, including but **NOT** limited to bricking, hardware failure, software malfunction, data loss, security issues, loss of warranty, or **any** other negative consequences that _may_ occur. **You are solely responsible** for any actions you take and any modifications you apply.
-> <!--- ⬆⬆⬆⬆⬆ omfg  what a shame ^w^ ⬆⬆⬆⬆⬆ --->
+> **You** are solely responsible for **any** damage, data loss, bricking, or loss of warranty to your device. 
 >
 > Proceed **only** if you fully understand what you are doing and accept all associated risks. If not, please leave this page!
 
-> [!NOTE]
-> I am currently ~~moving~~ this device toward [U-Boot](https://u-boot-project.org/) and a mainline Linux kernel, but for now Alpican is **still** using a downstream 4.19 kernel without U-Boot.
->
-> * [🇬🇧 Mainline / U-Boot progress](Docs/mainline.md)
-> * [Kernel sources (downstream 4.19)](https://github.com/99-blossom/kernel_xiaomi_blossom_gnulinux)
-> * [Kernel sources used to bring-up 6.10](https://github.com/evilMyQueen/linux-mt6765)
-> * [Kernel sources (7.2, mainline)](https://github.com/torvalds/linux)
-
 ## Changelog
-* **Alpican version:** v4.1 (based on Alpine v3.24, aarch64);
-* [🇬🇧 Changelog EN](Docs/ch/en.md)
-* [🇷🇺 Changelog RU](Docs/ch/ru.md)
+* **Alpican version:** v5.0 (based on Alpine v3.24.3, aarch64);
+* [🇬🇧 Changelog EN](Docs/changelog/en.md)
+* [🇷🇺 Changelog RU](Docs/changelog/ru.md)
 
 ## Images
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; align-items: flex-start;">
-  
-  <figure style="margin: 0;">
-    <img src="assets/ssh.png" alt="ssh" style="height: 400px; width: auto; display: block;">
-  </figure>
+<p align="left">
+  <img src="assets/ssh-small.gif" alt="ssh" height="430">
+  <img src="assets/2.jpg" alt="2" height="400">
+  <img src="assets/vnc_openbox.png" alt="vnc openbox" height="400">
+  <img src="assets/weston.jpg" alt="weston" height="400">
+</p>
 
-  <figure style="margin: 0;">
-    <img src="assets/2.jpg" alt="2" style="height: 400px; width: auto; display: block;">
-  </figure>
-
-  <figure style="margin: 0;">
-    <img src="assets/vnc_openbox.png" alt="3" style="height: 400px; width: auto; display: block;">
-  </figure>
-
-  <figure style="margin: 0;">
-    <img src="assets/4.jpg" alt="4" style="height: 400px; width: auto; display: block;">
-  </figure>
-
-  <figure style="margin: 0;">
-    <img src="assets/weston.jpg" alt="weston" style="height: 400px; width: auto; display: block;">
-  </figure>
-
-</div>
+<p align="left">
+  <img src="assets/xfce4-scrot.png" alt="xfce4-scrot" width="900">
+</p>
 
 ---
 
-📸 [all screenshots](Docs/allimg/un.md)
+📸 [all screenshots](Docs/images.md)
 
 
 ## Why
-This project **aims** to bring a minimal, fast, and highly customizable `Alpine Linux` environment to devices based on the MediaTek Helio G35/G25 (blossom platform), with the **Redmi 9C NFC** as the *primary* target. The **goal** is to move beyond heavily modified Android userlands and explore a clean, _Unix-like_ system on mobile hardware.
+This project **aims** to bring a minimal, fast, and highly customizable `Alpine Linux` environment to `xiaomi-blossom` (**MT6762** / **MT6765**) devices. The **goal** is to move beyond heavily modified Android userlands and explore a clean, _Unix-like_ system on mobile hardware.
 
-Alpine was chosen because of its simplicity, small footprint, and flexibility. It provides a lightweight base system that can be easily adapted for embedded devices and experimental ports. Unlike traditional Android-based distributions, Alpine gives full control over the system without unnecessary services or background overhead.
+Alpine was chosen because of its simplicity, small footprint, and flexibility. It provides a lightweight base system that can be easily adapted for embedded devices and experimental ports. Unlike traditional Android-based distributions, Alpine gives **full** control over the system without unnecessary services or background overhead.
 
 If you find any bugs, please [open an issue](https://github.com/99-blossom/alpican/issues) or reach out in any way you can. I _may_ be slow to respond, as I work on projects in my free time.
-### Other blossom devices?
 
-Officially, **Alpican** supports only the **Redmi 9C NFC**. However, it is absolutely possible to run it on other devices from the `blossom` family as well (thanks to **VildanG** for proving this). For example, **Redmi 9A**:
-
+After boot into a shell, the system typically consumes **only ~80MB of RAM**:
 <details>
-<summary>(+)</summary>
-    <br>
-    <img src="assets/redmi_9a.jpg" alt="Redmi 9A running Alpican" width="900">
-</details>
-<br>
 
-> [!NOTE]
-> On the **Redmi 9A**, the fingerprint-related configuration had to be disabled because the device does not have a fingerprint sensor. Leaving it enabled caused a **NULL pointer dereference**.
+<summary><code>free -h</code></summary>
+
+```
+alpican:~# free -h
+              total        used        free      shared  buff/cache   available
+Mem:           2.7G       78.2M        2.6G      588.0K       41.0M        2.6G
+Swap:             0           0           0
+alpican:~#
+```
+
+</details>
+
 ## Guides
-* [🇬🇧 Install EN](Docs/ins/en.md)
-* [🇷🇺 Install RU](Docs/ins/ru.md)
+
+* [🇬🇧 Install EN (fastboot)](Docs/install/en.md)
+* [🇷🇺 Install RU (fastboot)](Docs/install/ru.md)
 
 ## Status
 > [!IMPORTANT]
 > Features not listed here have not been tested or confirmed to work. Statuses marked as **Untested** or **Broken** are not functional or verified yet.
+
+<details>
+
+<summary><b>Feature status table</b></summary>
 
 | Feature | Status | Notes |
 | :--- | :---: | :--- |
@@ -92,7 +78,7 @@ Officially, **Alpican** supports only the **Redmi 9C NFC**. However, it is absol
 | **Booting** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `OpenRC`, `systemd`, `runit` (all work, but **OpenRC** is used) |
 | **Storage** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Internal (**eMMC**), external (**MicroSD** cards) |
 | **Display** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | Framebuffer (`mtkfb`, `/dev/fb0`), console output, brightness control |
-| **Console** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `agetty`, `tty`, `sh`/`bash`, cursor visibility |
+| **Console** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `agetty`, `tty`, cursor visibility |
 | **Wi-Fi** | <img src="https://img.shields.io/badge/-Works-brightgreen?style=flat" height="18" alt="Works"> | `wpa_supplicant`, `dhcpcd` (**wlan0**, **ap0**, **p2p0**) |
 | **Bluetooth** | <img src="https://img.shields.io/badge/-Partial-orange?style=flat" height="18" alt="Partial"> | |
 | **NFC** | <img src="https://img.shields.io/badge/-Partial-orange?style=flat" height="18" alt="Partial"> | `/dev/sec-nfc` exists |
@@ -111,23 +97,26 @@ Officially, **Alpican** supports only the **Redmi 9C NFC**. However, it is absol
 | **Calls** | <img src="https://img.shields.io/badge/-Broken-red?style=flat" height="18" alt="Broken"> | |
 | **Cellular Data** | <img src="https://img.shields.io/badge/-Broken-red?style=flat" height="18" alt="Broken"> | ccci/smem init fail|
 | **SMS** | <img src="https://img.shields.io/badge/-Broken-red?style=flat" height="18" alt="Broken"> |  |
-| **Fingerprint** | <img src="https://img.shields.io/badge/-Untested-lightgrey?style=flat" height="18" alt="Untested"> | |
+| **Fingerprint** | <img src="https://img.shields.io/badge/-Broken-red?style=flat" height="18" alt="Broken"> | |
 | **Sensors** | <img src="https://img.shields.io/badge/-Broken-red?style=flat" height="18" alt="Broken"> | `m_*_misc` sensors |
-| **Hardware Accel.**| <img src="https://img.shields.io/badge/-Broken-red?style=flat" height="18" alt="Broken"> |  |
-## In plans
-* (Close to) **Mainline** Linux kernel support;
-  - **DRM/KMS** support (or a compatible `/dev/dri/card0` interface);
-  - Hardware-accelerated graphics;
-  - Wayland support with DRM/KMS backend
+| **GPU**| <img src="https://img.shields.io/badge/-Experimental-00008b?style=flat" height="18" alt="Experimental"> |  See [Docs/GPU.md](Docs/GPU.md) |
+
+</details>
+
 
 ## Acknowledgments
 
-* **[Sakurajima](https://github.com/Sakurajima07)**- kernel source base (since v2.0)
-* **[postmarketOS](https://postmarketos.org)**
-* **dropout**, **[Xerrorain](https://4pda.to/forum/index.php?showuser=11705487)** - `lk_blossom_R.img`, `oem-cdms-logo-lk.img`
-* **[VildanG](https://github.com/vildangil)** - Redmi 9A tests
-* **[kiberrrxx](https://github.com/kiberrrxx)**
-* **[predefine](http://github.com/predefine)**
+* See [Docs/ACKNOWLEDGMENTS.md](Docs/ACKNOWLEDGMENTS.md)
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=99-blossom%2Falpican&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=99-blossom/alpican&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=99-blossom/alpican&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=99-blossom/alpican&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ## Liked it?
 * **KISS**
