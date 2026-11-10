@@ -22,7 +22,7 @@
 
 ## Images
 <p align="left">
-  <img src="assets/ssh-small.gif" alt="ssh" height="430">
+  <img src="assets/ssh.gif" alt="ssh" height="570">
   <img src="assets/2.jpg" alt="2" height="400">
   <img src="assets/vnc_openbox.png" alt="vnc openbox" height="400">
   <img src="assets/weston.jpg" alt="weston" height="400">
