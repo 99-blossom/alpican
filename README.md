@@ -33,7 +33,7 @@
 
 ---
 
-📸 [all screenshots](Docs/images.md)
+📸 [all screenshots](Docs/IMAGES.md)
 
 
 ## Why
