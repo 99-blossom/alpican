@@ -47,6 +47,7 @@ After boot into a shell, the system typically consumes **only ~80MB of RAM**:
 <details>
 
 <summary><code>free -h</code></summary>
+<br>
 
 ```
 alpican:~# free -h
@@ -70,6 +71,7 @@ alpican:~#
 <details>
 
 <summary><b>Feature status table</b></summary>
+<br>
 
 | Feature | Status | Notes |
 | :--- | :---: | :--- |
