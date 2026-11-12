@@ -1,3 +1,22 @@
+# alpican is deprecated
+
+the [dev-5.0](https://github.com/99-blossom/alpican/tree/dev-5.0) branch is still here (even though its unfinished and has no changelogs for 5.0)
+
+why? im tired of working on it and my angelican is literally dying - it wont charge the battery its dead the screen is broken the usb is bad and so on. i also saw woa (no idea if its real or fake but whatveer) and darwin kernel boot logs and i feel like my work is useless and only interferes
+
+alpican takes a lot of my time (even if it doesnt look like it) and i already have plenty of other things to do. i know alpican might be one of the most usable non-android systems for blossom (though ut 24.04 is obviously better - it has gpu acceleration and calls work but on vendor q). releases keep getting delayed and i feel guilty
+
+this is how i feel and i wont hide that i felt like this through the whole project. thanks to everyone who downloaded it used it or did anything with it and to those (if any) who were waiting for alpican 5.0 - im sorry
+
+its the same story as angentoo but without continuation
+
+please dont let alpican die
+
+<details>
+<summary>old readme</summary>
+
+<br>
+
 <a href="https://keepandroidopen.org">
   <img src="assets/keep-android-open.svg" alt="Android will become a locked-down platform in January 2027. keepandroidopen.org" width="100%">
 </a>
@@ -15,14 +34,6 @@
 > <!--- ⬆⬆⬆⬆⬆ omfg  what a shame ^w^ ⬆⬆⬆⬆⬆ --->
 >
 > Proceed **only** if you fully understand what you are doing and accept all associated risks. If not, please leave this page!
-
-> [!NOTE]
-> I am currently ~~moving~~ this device toward [U-Boot](https://u-boot-project.org/) and a mainline Linux kernel, but for now Alpican is **still** using a downstream 4.19 kernel without U-Boot.
->
-> * [🇬🇧 Mainline / U-Boot progress](Docs/mainline.md)
-> * [Kernel sources (downstream 4.19)](https://github.com/99-blossom/kernel_xiaomi_blossom_gnulinux)
-> * [Kernel sources used to bring-up 6.10](https://github.com/evilMyQueen/linux-mt6765)
-> * [Kernel sources (7.2, mainline)](https://github.com/torvalds/linux)
 
 ## Changelog
 * **Alpican version:** v4.1 (based on Alpine v3.24, aarch64);
@@ -132,3 +143,6 @@ Officially, **Alpican** supports only the **Redmi 9C NFC**. However, it is absol
 ## Liked it?
 * **KISS**
 * ... and if you find this project useful or interesting, please consider leaving a ⭐ **star**!
+
+
+</details>
